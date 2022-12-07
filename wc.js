@@ -14,7 +14,7 @@ class UIAvatar extends HTMLElement {
     this.attachShadow({mode: 'open'})
     const size = this.getAttribute('size') || 'medium'
     const social = this.getAttribute('social') || ''
-    const username = this.getAttribute('username')
+    const username = this.getAttribute('username') || 'username'
     const paths =  [social, username].filter(Boolean).join('/')
     const hideName = this.getAttribute('hideName')
     console.log(hideName, typeof hideName)
